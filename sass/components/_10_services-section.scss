@@ -1,0 +1,10 @@
+/* Section What are we doing */
+.services {
+  display: flex;
+  margin-top: 72px;
+  padding: 0;
+}
+
+.services .items:not(:last-child) {
+  padding-right: 24px;
+}

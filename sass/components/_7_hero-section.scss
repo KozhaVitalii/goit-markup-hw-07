@@ -1,0 +1,75 @@
+/* Стилизуем героя */
+.overlay {
+  max-width: 1440px;
+  height: 603px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.5),
+      rgba(46, 47, 66, 0.5)
+    ),
+    url('../images1/peopleoffice.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  text-align: center;
+  background-color: $title-text-color-second-bg-color;
+}
+.hero-content {
+  padding-top: 192px;
+  padding-bottom: 192px;
+}
+.hero-title {
+  display: block;
+  width: 492px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 48px;
+
+  color: $first-color;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+}
+.hero-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 4px;
+  border: none;
+  align-items: center;
+  padding: 16px 32px;
+  min-width: 170px;
+  min-height: 51px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: $first-color;
+  background-color: $accent-bg-color-button-text-color;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  transition: box-shadow $duration $timing-function,
+    background-color $duration $timing-function;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.hero-button:active {
+  background-color: $button-bg-active-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,56 @@
+  $portfolio-card-set-left-gap: 24px;
+  $portfolio-card-set-top-gap: 48px;
+
+  $primary-text-color: #434455;
+  $title-text-color-second-bg-color: #2e2f42;
+  $accent-bg-color-button-text-color: #4d5ae5;
+  $first-color: #ffffff;
+  $third-background-color: #e5e5e5;
+  $fourth-background-color: #f4f4fd;
+  $button-background-color: #e7e9fc;
+  $button-bg-active-color: #404bbf;
+  $border-color: #8e8f99;
+  $icon-customer-color: #afb1b8;
+  $hover-background-color: #31d0aa;
+
+  $duration: 250ms;
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  /* Утилиты */
+.list {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Обнуляем маржины для элементов макета' */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Убираем точки в списке */
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+.pointer {
+  cursor: pointer;
+}

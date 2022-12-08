@@ -1,0 +1,50 @@
+/* Section Team */
+
+.team {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 72px;
+  gap: 24px;
+}
+
+.team-elements {
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: $first-color;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-background {
+  background-color: $fourth-background-color;
+}
+
+.teamcard-content {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.social-link {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  gap: 24px;
+}
+
+.social-blok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 12px 12px;
+  border-radius: 50%;
+  background-color: $accent-bg-color-button-text-color;
+}
+
+.social-blok:not(:last-child) {
+  margin-right: 24px;
+}
