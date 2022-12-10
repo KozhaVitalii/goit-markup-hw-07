@@ -1,12 +1,13 @@
 /* Задаем цвет лого */
 .logo-top {
+  // display: flex;
+  // align-items: center;
+
   color: $accent-bg-color-button-text-color;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
@@ -15,13 +16,14 @@
   color: $title-text-color-second-bg-color;
 }
 .logo-bottom {
+  // display: flex;
+  // align-items: center;
+
   color: $accent-bg-color-button-text-color;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;

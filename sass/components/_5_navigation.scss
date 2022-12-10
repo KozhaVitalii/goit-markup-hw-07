@@ -1,19 +1,20 @@
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-.site-nav {
-  display: flex;
-  margin-left: 77px;
-}
-.site-nav .item + .item {
-  margin-left: 40px;
-}
-.site-nav .link {
-  position: relative;
 
-  padding-top: 24px;
-  padding-bottom: 29px;
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+// }
+// .site-nav {
+//   display: flex;
+//   margin-left: 77px;
+// }
+// .site-nav .item + .item {
+//   margin-left: 40px;
+// }
+.site-nav .link {
+  // position: relative;
+
+  // padding-top: 24px;
+  // padding-bottom: 29px;
   color: $title-text-color-second-bg-color;
   font-weight: 600;
   font-size: 16px;

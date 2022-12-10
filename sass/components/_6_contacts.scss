@@ -1,16 +1,18 @@
+
 /* Стилизуем в шапке контакты */
-.contacts-nav {
-  display: flex;
-  margin-left: auto;
-}
-.contacts-nav .item:not(:last-child) {
-  margin-right: 40px;
-}
+// .contacts-nav {
+//   display: flex;
+//   margin-left: auto;
+// }
+// .contacts-nav .item:not(:last-child) {
+//   margin-right: 40px;
+// }
 
 .contacts-nav .contacts {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 28px;
+  // display: flex;
+  // padding-top: 24px;
+  // padding-bottom: 28px;
+
   color: $primary-text-color;
   font-size: 16px;
   line-height: 1.5;
@@ -22,3 +24,5 @@
 .contacts-nav .contacts:focus {
   color: $accent-bg-color-button-text-color;
 }
+
+

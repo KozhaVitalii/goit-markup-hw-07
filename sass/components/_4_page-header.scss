@@ -8,3 +8,38 @@
   display: flex;
   align-items: center;
 }
+
+.nav-button {
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: $pre-tablet) {
+  .all-header {
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: $pre-tablet) {
+  .contacts-nav {
+    display: none;
+  }
+
+  .site-nav {
+    display: none;
+  }
+}
+
+// @media screen and (min-width: $tablet) {
+//   .nav-button {
+//     display: none;
+//   }
+//   .icon-menu {
+//     display: none;
+//   }
+// }

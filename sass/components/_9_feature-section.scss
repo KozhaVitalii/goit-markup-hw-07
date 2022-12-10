@@ -8,33 +8,34 @@
 }
 
 .feature-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  margin-bottom: 8px;
-  width: 264px;
-  height: 112px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // margin: 0;
+  // margin-bottom: 8px;
+  // width: 264px;
+  // height: 112px;
+
   border-radius: 4px;
   text-align: center;
   background-color: $fourth-background-color;
   border-radius: 4px;
 }
 
-.features {
-  display: flex;
-  min-width: 264px;
-  margin: 0;
-  padding: 0;
-}
+// .features {
+//   display: flex;
+//   min-width: 264px;
+//   margin: 0;
+//   padding: 0;
+// }
 
-.features .items {
-  flex-basis: 264px;
-}
+// .features .items {
+//   flex-basis: 264px;
+// }
 
-.features .items:not(:last-child) {
-  margin-right: 24px;
-}
+// .features .items:not(:last-child) {
+//   margin-right: 24px;
+// }
 
 .section-text {
   color: $primary-text-color;

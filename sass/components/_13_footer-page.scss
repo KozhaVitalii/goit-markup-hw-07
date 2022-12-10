@@ -9,18 +9,21 @@
 }
 
 .all-footer {
-  display: flex;
+  // display: flex;
   margin: 0;
   padding: 0;
-  align-items: flex-start;
+  // align-items: flex-start;
 }
 .footer-block {
   width: 264px;
-  padding: 0;
-  margin: 0;
+  // padding: 0;
+  // margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .footer-text {
-  display: inline-block;
+  // display: inline-block;
   width: 264px;
   margin-top: 16px;
 
@@ -36,7 +39,10 @@
 
 .social-media {
   display: block;
-  margin-left: 120px;
+  // margin-left: 120px;
+    margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .social-text,
 .form-text {
@@ -88,18 +94,18 @@
 .footer-form {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 80px;
-  width: 456px;
-  height: 80px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // margin-left: 80px;
+  // width: 456px;
+  // height: 80px;
 }
 
 .footer-input-text {
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
+  // position: absolute;
+  // left: 0%;
+  // bottom: 0%;
 
   display: flex;
   width: 264px;
@@ -117,9 +123,9 @@
 }
 
 .button-subscribe {
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
+  // position: absolute;
+  // right: 0%;
+  // bottom: 0%;
 
   display: flex;
   width: 168px;

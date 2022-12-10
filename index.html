@@ -20,9 +20,6 @@
     <header class="border-header">
       <div class="container all-header">
         <nav class="main-nav">
-          <!-- <a href="index.html">
-          <img src="./images/WebStudio.svg" alt="Лого вебстудии" />
-        </a> -->
           <a href="index.html" class="logo-top"
             >Web<span class="logo-header">Studio</span></a
           >
@@ -46,14 +43,91 @@
             <a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a>
           </li>
         </ul>
-        <button type="button" class="nav-button pointer">
+        <button
+          type="button"
+          class="nav-button pointer js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="32" height="22">
-            <use href="./images1/sprite1.svg#icon-charm_menu-hamburger"></use>
+            <use
+              class="icon-menu"
+              href="./images1/sprite1.svg#menu-hamburger"
+            ></use>
           </svg>
-          <!-- <svg width="24" height="24">
-            <use href="./images1/sprite1.svg#icon-close"></use>
-          </svg> -->
         </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu-button pointer js-close-menu">
+            <svg width="24" height="24" aria-label="Menu switching">
+              <use
+                class="icon-cross"
+                href="./images1/sprite1.svg#icon-close-black-18dp"
+              ></use>
+            </svg>
+          </button>
+
+          <!-- <ul class="site-nav list">
+            <li class="item">
+              <a href="index.html" class="link current">Studio</a>
+            </li>
+
+            <li class="item">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+
+            <li class="item"><a href="#" class="link">Contacts</a></li>
+          </ul>
+
+          <ul class="contacts-nav list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" lang="en" class="contacts"
+                >info@devstudio.com</a
+              >
+            </li>
+
+            <li class="item">
+              <a href="tel:+110001111111" class="contacts"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
+          <ul class="social-link">
+            <li class="social-elements">
+              <a href="#" class="social-blok social-items pointer">
+                <svg class="icon-team" width="16" height="16">
+                  <use href="./images1/sprite1.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-elements">
+              <a href="#" class="social-blok social-items pointer">
+                <svg class="icon-team" width="16" height="16">
+                  <use href="./images1/sprite1.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-elements">
+              <a href="#" class="social-blok social-items pointer">
+                <svg class="icon-team" width="16" height="16">
+                  <use href="./images1/sprite1.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-elements">
+              <a href="#" class="social-blok social-items pointer">
+                <svg class="icon-team" width="16" height="16">
+                  <use href="./images1/sprite1.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul> -->
+        </div>
       </div>
     </header>
     <main>
@@ -562,5 +636,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
