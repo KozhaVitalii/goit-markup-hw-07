@@ -1,31 +1,23 @@
-// .mobile-menu {
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-//   max-height: 796px;
-//   z-index: 1000;
-//   top: 0;
-//   left: 0;
-
-  // opacity: 0;
-  // visibility: hidden;
-  // pointer-events: none;
-
-  // transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  // visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
-// .mobile-menu.is-open {
-//   opacity: 1;
-//   visibility: visible;
-//   pointer-events: auto;
-// }
-
 .menu-container {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  // max-height: 796px;
+  // padding: 40px;
 
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-bottom: 40px;
+  background-color: $first-color;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  transform: translateX(100%);
+  transition: transform $duration $timing-function;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
 }
 
 // .menu-toggle {
@@ -38,14 +30,13 @@
 //   justify-content: center;
 //   width: 24px;
 //   height: 24px;
-  
+
 //   line-height: 0;
 
 //   border-radius: 50%;
 //   background-color: $button-background-color;
 //   border: 1px solid rgba(0, 0, 0, 0.1);
 // }
-
 
 .menu-toggle {
   min-height: 40px;
@@ -63,7 +54,7 @@
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .menu-toggle {
     display: none;
   }
@@ -74,41 +65,135 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
-  z-index: 999;
-
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
-}
-
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: $first-color;
 }
 
+/* Стилизуем элементы навигации в мобильном меню */
 
 .mobile-menu {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+
+  display: block;
   padding: 0;
-  margin: 0;
   list-style: none;
+}
+
+.mobile-menu .item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: #fff;
+  text-decoration: none;
+
+  color: $title-text-color-second-bg-color;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.111;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
+
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
+  color: $primary-text-color;
+}
+.mobile-menu .link.current,
+.mobile-menu .link:active {
+  color: $accent-bg-color-button-text-color;
+}
+
+// .current::after {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   content: '';
+//   display: block;
+//   width: 100%;
+//   height: 4px;
+//   background-color: $accent-bg-color-button-text-color;
+//   border-radius: 2px;
+// }
+
+/* Стилизуем в мобильном меню контакты */
+.mobile-contacts {
+  position: absolute;
+  bottom: 128px;
+  left: 40px;
+  right: 51px;
+
+  display: block;
+  // width: 337px;
+  padding: 0;
+  margin-bottom: 48px;
+  list-style: none;
+}
+.mobile-contacts .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-contacts .contacts {
+  color: $accent-bg-color-button-text-color;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.111;
+  text-decoration: none;
+
+  transition: color $duration $timing-function;
+}
+.mobile-contacts .contacts:hover,
+.mobile-contacts .contacts:focus {
+  color: $accent-bg-color-button-text-color;
+}
+
+.mobile-contacts .contacts-mail {
+  color: $primary-text-color;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
   text-decoration: none;
 }
+
+/* Стилизуем линки на соц.сети в мобильном меню*/
+.mobile-social-link {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+
+  display: flex;
+  width: 328px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 0;
+  list-style: none;
+
+  // margin-top: 48px;
+  gap: 56px;
+}
+
+.mobile-social-link.social-blok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $accent-bg-color-button-text-color;
+}
+
+// .mobile-social-link .social-blok:not(:last-child) {
+//   margin-right: 24px;
+// }
