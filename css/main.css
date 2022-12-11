@@ -113,6 +113,15 @@ body {
           align-items: center;
 }
 
+.container .menu-toggle {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  min-width: 32px;
+  min-height: 22px;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 767px) {
   .all-header {
     -webkit-box-pack: justify;
@@ -187,7 +196,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 796px;
   z-index: 999;
+  padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
           box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -205,8 +216,7 @@ body {
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,16 +247,29 @@ body {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 25px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
   color: #ffffff;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 
 /* Стилизуем элементы навигации в мобильном меню */
 .mobile-menu {
-  position: absolute;
-  top: 80px;
-  left: 40px;
+  margin-top: 40px;
+  margin-bottom: 284px;
   display: block;
   padding: 0;
   list-style: none;
@@ -277,17 +300,13 @@ body {
   color: #434455;
 }
 
-.mobile-menu .link.current,
+.mobile-menu .link.actual,
 .mobile-menu .link:active {
   color: #4d5ae5;
 }
 
 /* Стилизуем в мобильном меню контакты */
 .mobile-contacts {
-  position: absolute;
-  bottom: 128px;
-  left: 40px;
-  right: 51px;
   display: block;
   padding: 0;
   margin-bottom: 48px;
@@ -323,14 +342,9 @@ body {
 
 /* Стилизуем линки на соц.сети в мобильном меню*/
 .mobile-social-link {
-  position: absolute;
-  left: 40px;
-  bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 328px;
-  height: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -343,13 +357,13 @@ body {
   gap: 56px;
 }
 
-.mobile-social-link.social-blok {
+.mobile-social-link .mobile-social-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -531,7 +545,7 @@ body {
   gap: 24px;
 }
 
-.social-blok {
+.social-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
