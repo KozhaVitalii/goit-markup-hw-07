@@ -1,6 +1,13 @@
 /* Section What are we doing */
+
+@media screen and (max-width: $pre-desktop) {
+  .section-services {
+    display: none;
+  }
+}
+
 .services {
-  // display: flex;
+  display: flex;
   margin-top: 72px;
   padding: 0;
 }

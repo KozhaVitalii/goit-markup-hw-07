@@ -109,6 +109,8 @@
 .mobile-contacts {
   display: block;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
   list-style: none;
 }
@@ -140,11 +142,13 @@
 
 /* Стилизуем линки на соц.сети в мобильном меню*/
 .mobile-social-link {
-  display: flex;
+  display: block;
   // width: 328px;
   // height: 40px;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   padding: 0;

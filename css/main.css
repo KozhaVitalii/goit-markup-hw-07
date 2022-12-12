@@ -499,8 +499,17 @@ body {
   line-height: 1.5;
 }
 
+/* Future, Team, Portfolio */
 /* Section What are we doing */
+@media screen and (max-width: 1157px) {
+  .section-services {
+    display: none;
+  }
+}
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 72px;
   padding: 0;
 }
@@ -509,7 +518,7 @@ body {
   padding-right: 24px;
 }
 
-/* Section Team */
+/* Mobile version section Team */
 .team {
   margin: 0;
   padding: 0;
@@ -567,6 +576,7 @@ body {
   margin-right: 24px;
 }
 
+/* Desktop version section Team */
 /* Section Customers */
 .customer-block {
   margin: 0;
@@ -613,8 +623,10 @@ body {
   border-color: #4d5ae5;
 }
 
-/* Стилизуем футер */
+/* Settings for mobile version */
 .footer {
+  margin: 0;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   padding-top: 100px;
@@ -628,14 +640,17 @@ body {
 }
 
 .footer-block {
-  width: 264px;
+  display: block;
+  max-width: 268px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 .footer-text {
-  width: 264px;
   margin-top: 16px;
   color: #e7e9fc;
   font-size: 16px;
@@ -652,6 +667,7 @@ body {
 
 .social-media {
   display: block;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -673,6 +689,9 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 16px;
 }
 
@@ -713,16 +732,16 @@ body {
 }
 
 .footer-form {
-  position: relative;
+  display: block;
+  text-align: center;
 }
 
 .footer-input-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 264px;
+  width: 100%;
   height: 40px;
-  margin-right: 24px;
   padding-top: 8px;
   padding-left: 16px;
   padding-bottom: 8px;
@@ -737,8 +756,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 168px;
+  max-width: 168px;
   height: 40px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 8px 24px;
   gap: 16px;
   border: none;
@@ -751,6 +773,7 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* Desktop version*/
 /* Section filter  */
 .filter-button {
   padding: 8px 16px;
