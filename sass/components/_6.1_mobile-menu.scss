@@ -2,9 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 796px;
+  width: 100vw;
+  height: 100vh;
   z-index: 999;
   padding: 40px;
 
@@ -142,7 +141,7 @@
 
 /* Стилизуем линки на соц.сети в мобильном меню*/
 .mobile-social-link {
-  display: block;
+  display: flex;
   // width: 328px;
   // height: 40px;
   // justify-content: center;

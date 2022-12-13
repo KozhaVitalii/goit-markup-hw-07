@@ -21,34 +21,36 @@
   background-color: $title-text-color-second-bg-color;
 }
 .hero-content {
-  padding-top: 192px;
-  padding-bottom: 192px;
+  padding-top: 112px;
+  padding-bottom: 109px;
 }
 .hero-title {
-  // display: block;
+  display: block;
+  text-align: center;
   // width: 492px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin-top: 0;
+  margin-left: 55px;
+  margin-right: 56px;
+  margin-bottom: 80px;
   // margin-bottom: 48px;
 
   color: $first-color;
   font-weight: 600;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.111;
+  text-transform: capitalize;
 }
 .hero-button {
-  // display: flex;
-  // margin-left: auto;
-  // margin-right: auto;
+  display: flex;
   flex-direction: row;
-  gap: 10px;
-  border-radius: 4px;
-  border: none;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   padding: 16px 32px;
   min-width: 170px;
   min-height: 51px;
+  gap: 10px;
+  border-radius: 4px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   color: $first-color;
