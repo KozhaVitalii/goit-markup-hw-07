@@ -1,5 +1,7 @@
 /* Section Customers */
 
+/* Mobile version section Team */
+@media screen and (max-width: $pre-tablet) {
 .customer-block {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +12,7 @@
   gap: 16px;
 
   // flex-basis: calc((100% - 54px) / 2);
+}
 }
 
 .customer-block .items {

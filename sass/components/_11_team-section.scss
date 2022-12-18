@@ -1,109 +1,159 @@
+// // Common rules for Team section
+
 /* Mobile version section Team */
+@media screen and (max-width: $pre-tablet) {
+  .team {
+    margin: 0;
+    padding: 0;
+    margin-top: 72px;
+    // gap: 24px;
+  }
 
-.team {
-  // display: flex;
+  .team-elements {
+    display: block;
+    padding: 0;
+    margin-top: 72px;
+    margin-left: 68px;
+    margin-right: 68px;
+    background-color: $first-color;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-  margin: 0;
-  padding: 0;
-  margin-top: 72px;
-  // gap: 24px;
+  .teamcard-content {
+    text-align: center;
+    padding: 32px 16px;
+  }
+
+  .team-background {
+    background-color: $fourth-background-color;
+  }
+
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    gap: 24px;
+  }
+
+  .social-block {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: $accent-bg-color-button-text-color;
+  }
 }
 
-.team-elements {
-  display: block;
-  padding: 0;
-  margin-top: 72px;
-  margin-left: 68px;
-  margin-right: 68px;
-  // flex-basis: calc((100% - 72px) / 4);
+// Media rules for tablet
+@media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 72px;
+    gap: 24px;
+  }
+  .team-elements {
+    flex-basis: calc((100% - 24px) / 2);
+    background-color: $first-color;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-  background-color: $first-color;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  .team-background {
+    background-color: $fourth-background-color;
+  }
+
+  .teamcard-content {
+    text-align: center;
+    padding: 32px 16px;
+  }
+
+  .social-link {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    gap: 24px;
+  }
+
+  .social-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: $accent-bg-color-button-text-color;
+  }
+
+  .social-block:not(:last-child) {
+    margin-right: 24px;
+  }
 }
 
-.team-background {
-  background-color: $fourth-background-color;
-}
+// /* Desktop version section Team */
+// @media screen and (min-width: $desktop) {
+//   .team {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     margin-top: 72px;
+//     gap: 24px;
+//   }
 
-.teamcard-content {
-  text-align: center;
-  padding: 32px 16px;
-}
+//   .team-elements {
+//     flex-basis: calc((100% - 72px) / 4);
+//     background-color: $first-color;
+//     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+//       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+//     border-radius: 0px 0px 4px 4px;
+//   }
 
-.social-link {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  margin-top: 8px;
-  gap: 24px;
-}
+//   .team-background {
+//     background-color: $fourth-background-color;
+//   }
 
-.social-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  padding: 12px 12px;
-  border-radius: 50%;
-  background-color: $accent-bg-color-button-text-color;
-}
+//   .teamcard-content {
+//     text-align: center;
+//     padding: 32px 16px;
+//   }
 
-// .social-blok:not(:last-child) {
-//   margin-right: 24px;
-// }
+//   .social-link {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     margin-top: 8px;
+//     gap: 24px;
+//   }
 
-/* Desktop version section Team */
+//   .social-block {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     width: 40px;
+//     height: 40px;
+//     padding: 12px 12px;
+//     border-radius: 50%;
+//     background-color: $accent-bg-color-button-text-color;
+//   }
 
-// .team {
-//   display: flex;
-//   margin: 0;
-//   padding: 0;
-//   margin-top: 72px;
-//   gap: 24px;
-// }
-
-// .team-elements {
-//   flex-basis: calc((100% - 72px) / 4);
-//   background-color: var(--first-color);
-//   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-//     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-//   border-radius: 0px 0px 4px 4px;
-// }
-
-// .team-background {
-//   background-color: var(--fourth-background-color);
-// }
-
-// .teamcard-content {
-//   text-align: center;
-//   padding: 32px 16px;
-// }
-
-// .social-link {
-//   display: flex;
-//   margin: 0;
-//   padding: 0;
-//   margin-top: 8px;
-//   gap: 24px;
-// }
-
-// .social-blok {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   width: 40px;
-//   height: 40px;
-//   padding: 12px 12px;
-//   border-radius: 50%;
-//   background-color: var(--accent-bg-color-button-text-color);
-// }
-
-// .social-blok:not(:last-child) {
-//   margin-right: 24px;
+//   .social-block:not(:last-child) {
+//     margin-right: 24px;
+//   }
 // }

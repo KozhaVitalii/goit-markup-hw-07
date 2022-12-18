@@ -9,7 +9,22 @@
   align-items: center;
 }
 
-.container .menu-toggle {
+@media screen and (max-width: $pre-tablet) {
+  .all-header {
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .contacts-nav {
+    display: none;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .menu-toggle {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -18,30 +33,5 @@
 
   color: $first-color;
 }
-
-@media screen and (max-width: $pre-tablet) {
-  .all-header {
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
 }
 
-@media screen and (max-width: $pre-tablet) {
-  .contacts-nav {
-    display: none;
-  }
-
-  .site-nav {
-    display: none;
-  }
-}
-
-// @media screen and (min-width: $tablet) {
-//   .nav-button {
-//     display: none;
-//   }
-//   .icon-menu {
-//     display: none;
-//   }
-// }

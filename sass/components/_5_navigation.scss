@@ -1,47 +1,49 @@
+@media screen and (min-width: $tablet) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    margin-left: 77px;
+  }
+  .site-nav .item + .item {
+    margin-left: 40px;
+  }
+  .site-nav .link {
+    position: relative;
 
-// .main-nav {
-//   display: flex;
-//   align-items: center;
-// }
-// .site-nav {
-//   display: flex;
-//   margin-left: 77px;
-// }
-// .site-nav .item + .item {
-//   margin-left: 40px;
-// }
-.site-nav .link {
-  // position: relative;
+    padding-top: 24px;
+    padding-bottom: 29px;
+    color: $title-text-color-second-bg-color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
 
-  // padding-top: 24px;
-  // padding-bottom: 29px;
-  color: $title-text-color-second-bg-color;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-decoration: none;
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: $primary-text-color;
+  }
+  .site-nav .link.current,
+  .site-nav .link:active {
+    color: $accent-bg-color-button-text-color;
+  }
 
-  transition-property: color;
-  transition-duration: $duration;
-  transition-timing-function: $timing-function;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $primary-text-color;
-}
-.site-nav .link.current,
-.site-nav .link:active {
-  color: $accent-bg-color-button-text-color;
+  .current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-bg-color-button-text-color;
+    border-radius: 2px;
+  }
 }
 
-.current::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-bg-color-button-text-color;
-  border-radius: 2px;
-}

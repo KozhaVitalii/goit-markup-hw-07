@@ -1,172 +1,176 @@
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  padding: 40px;
+@media screen and (max-width: $pre-tablet) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 796px;
+    z-index: 999;
+    padding: 40px;
 
-  background-color: $first-color;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    background-color: $first-color;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
-  transform: translateX(100%);
-  transition: transform $duration $timing-function;
-}
+    transform: translateX(100%);
+    transition: transform $duration $timing-function;
+  }
 
-.menu-container.is-open {
-  transform: translateX(0);
-}
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
 
-.menu-toggle {
-  position: absolute;
-  // min-height: 40px;
-  // min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-
-@media (min-width: $tablet) {
   .menu-toggle {
-    display: none;
+    position: absolute;
+    // min-height: 40px;
+    // min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+
+    color: $first-color;
+    border-radius: 50%;
+    background-color: $button-background-color;
+
+    border: 1px solid #0000001a;
+  }
+
+  /* Стилизуем элементы навигации в мобильном меню */
+
+  .mobile-menu {
+    display: block;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 284px;
+    list-style: none;
+  }
+
+  .mobile-menu .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .mobile-menu .link {
+    display: block;
+    text-decoration: none;
+
+    color: $title-text-color-second-bg-color;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.111;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+
+  .mobile-menu .link:hover,
+  .mobile-menu .link:focus {
+    color: $primary-text-color;
+  }
+  .mobile-menu .link.actual,
+  .mobile-menu .link:active {
+    color: $accent-bg-color-button-text-color;
+  }
+
+  /* Стилизуем в мобильном меню контакты */
+
+  .mobile-media-contacts {
+    margin-top: auto;
+  }
+
+  .mobile-contacts {
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    list-style: none;
+  }
+  .mobile-contacts .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .mobile-contacts .contacts {
+    color: $accent-bg-color-button-text-color;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.111;
+    text-decoration: none;
+
+    transition: color $duration $timing-function;
+  }
+  .mobile-contacts .contacts:hover,
+  .mobile-contacts .contacts:focus {
+    color: $accent-bg-color-button-text-color;
+  }
+
+  .mobile-contacts .contacts-mail {
+    color: $primary-text-color;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  /* Стилизуем линки на соц.сети в мобильном меню*/
+  .mobile-social-link {
+    display: flex;
+    // width: 328px;
+    // height: 40px;
+    // justify-content: center;
+    // align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    padding: 0;
+    list-style: none;
+
+    gap: 56px;
+  }
+
+  .mobile-social-link .mobile-social-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $accent-bg-color-button-text-color;
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+@media (min-width: $tablet) {
+  .menu-toggle,
+  .menu-container {
+    display: none;
+  }
 }
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 25px;
-  right: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-
-  color: $first-color;
-  border-radius: 50%;
-  background-color: $button-background-color;
-
-  border: 1px solid #0000001a;
-}
-
-/* Стилизуем элементы навигации в мобильном меню */
-
-.mobile-menu {
-  margin-top: 40px;
-  margin-bottom: 284px;
-
-  display: block;
-  padding: 0;
-  list-style: none;
-}
-
-.mobile-menu .item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.mobile-menu .link {
-  display: block;
-  text-decoration: none;
-
-  color: $title-text-color-second-bg-color;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.111;
-  text-decoration: none;
-
-  transition-property: color;
-  transition-duration: $duration;
-  transition-timing-function: $timing-function;
-}
-
-.mobile-menu .link:hover,
-.mobile-menu .link:focus {
-  color: $primary-text-color;
-}
-.mobile-menu .link.actual,
-.mobile-menu .link:active {
-  color: $accent-bg-color-button-text-color;
-}
-
-/* Стилизуем в мобильном меню контакты */
-.mobile-contacts {
-  display: block;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
-  list-style: none;
-}
-.mobile-contacts .item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.mobile-contacts .contacts {
-  color: $accent-bg-color-button-text-color;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.111;
-  text-decoration: none;
-
-  transition: color $duration $timing-function;
-}
-.mobile-contacts .contacts:hover,
-.mobile-contacts .contacts:focus {
-  color: $accent-bg-color-button-text-color;
-}
-
-.mobile-contacts .contacts-mail {
-  color: $primary-text-color;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-/* Стилизуем линки на соц.сети в мобильном меню*/
-.mobile-social-link {
-  display: flex;
-  // width: 328px;
-  // height: 40px;
-  // justify-content: center;
-  // align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-
-  padding: 0;
-  list-style: none;
-
-  gap: 56px;
-}
-
-.mobile-social-link .mobile-social-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: $accent-bg-color-button-text-color;
-}
-
-// .mobile-social-link .social-blok:not(:last-child) {
-//   margin-right: 24px;
-// }

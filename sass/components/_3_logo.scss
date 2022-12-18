@@ -1,8 +1,6 @@
-/* Задаем цвет лого */
-.logo-top {
-  // display: flex;
-  // align-items: center;
+// Common rules for logo
 
+.logo-top {
   color: $accent-bg-color-button-text-color;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -16,9 +14,6 @@
   color: $title-text-color-second-bg-color;
 }
 .logo-bottom {
-  // display: flex;
-  // align-items: center;
-
   color: $accent-bg-color-button-text-color;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -30,4 +25,15 @@
 }
 .logo-bottom .logo-footer {
   color: $fourth-background-color;
+}
+
+@media screen and (min-width: $tablet) {
+.logo-top {
+  display: flex;
+  align-items: center;
+}
+
+.logo-bottom {
+    display: flex;
+  align-items: center;}
 }
