@@ -1,7 +1,4 @@
 /* Section Customers */
-
-/* Mobile version section Team */
-@media screen and (max-width: $pre-tablet) {
 .customer-block {
   display: flex;
   flex-wrap: wrap;
@@ -9,15 +6,25 @@
   margin: 0;
   padding: 0;
   margin-top: 72px;
-  gap: 16px;
-
-  // flex-basis: calc((100% - 54px) / 2);
-}
+  @media screen and (max-width: $pre-tablet) {
+    gap: 16px;
+  }
+  @media screen and (min-width: $tablet) {
+    gap: 24px;
+  }
 }
 
 .customer-block .items {
-  width: 190px;
-  height: 88px;
+  max-height: 88px;
+  @media screen and (max-width: $pre-tablet) {
+    max-width: 190px;
+    flex-basis: calc((100% - 16px) / 2);
+  }
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    width: auto;
+    // max-width: 168px;
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 .customer-block-icon {

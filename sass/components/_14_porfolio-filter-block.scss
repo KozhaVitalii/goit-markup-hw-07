@@ -1,9 +1,7 @@
-
 .porfolio-section {
   padding-top: 48px;
   padding-bottom: 48px;
 }
-
 
 /* Section filter  */
 .filter-button {
@@ -35,18 +33,26 @@
 
 .filter {
   display: block;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: $pre-tablet) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: -16px;
+  }
   text-align: center;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
 }
 
-// .filter .items {
-//   justify-content: center;
-// }
+.filter .items {
+  justify-content: center;
+  @media screen and (max-width: $pre-tablet) {
+    padding-bottom: 16px;
+  }
+}
 
-// .filter .items:not(:last-child) {
-//   padding-right: 24px;
-// }
+.filter .items:not(:last-child) {
+  padding-right: 24px;
+}
