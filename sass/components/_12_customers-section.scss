@@ -15,15 +15,20 @@
 }
 
 .customer-block .items {
-  max-height: 88px;
+  height: 88px;
   @media screen and (max-width: $pre-tablet) {
     max-width: 190px;
     flex-basis: calc((100% - 16px) / 2);
   }
   @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
-    width: auto;
-    // max-width: 168px;
+    max-width: 168px;
+    width: 100%;
+
     flex-basis: calc((100% - 48px) / 3);
+  }
+  @media screen and (min-width: $desktop) {
+    width: 168px;
+    height: 88px;
   }
 }
 
@@ -42,10 +47,11 @@
     border-color $duration $timing-function;
 }
 
-// .customer-block-icon:not(:last-child) {
-//   margin-right: 24px;
-// }
-
+@media screen and (min-width: $desktop) {
+  .customer-block-icon:not(:last-child) {
+    margin-right: 24px;
+  }
+}
 .icon-customer {
   fill: currentColor;
 }

@@ -1,10 +1,11 @@
 /* Стилизуем героя */
 .overlay {
-  // max-width: 1440px;
-  // height: 603px;
-  // margin-left: auto;
-  // margin-right: auto;
-
+  @media screen and (min-width: $desktop) {
+  max-width: 1440px;
+  height: 603px;
+  margin-left: auto;
+  margin-right: auto;
+  }
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.5),
@@ -20,19 +21,18 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-.overlay {
-  background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.5),
-      rgba(46, 47, 66, 0.5)
-    ),
-    url('../images1/peopleoffice@2x.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  .overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.5),
+        rgba(46, 47, 66, 0.5)
+      ),
+      url('../images1/peopleoffice@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
-}
-
 
 .hero {
   text-align: center;
@@ -41,27 +41,46 @@
 .hero-content {
   padding-top: 112px;
   padding-bottom: 109px;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 192px;
+    padding-bottom: 192px;
+  }
 }
 .hero-title {
   display: block;
   text-align: center;
-  // width: 492px;
+
   margin-left: 55px;
   margin-right: 56px;
   margin-bottom: 80px;
-  // margin-bottom: 48px;
 
   color: $first-color;
   font-weight: 600;
   font-size: 36px;
   line-height: 1.111;
   text-transform: capitalize;
+
+  @media screen and (min-width: $tablet) {
+    width: 492px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 48px;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+      margin-bottom: 40px;
+    }
+    font-size: 56px;
+    line-height: 1.07;
+  }
 }
 .hero-button {
   display: flex;
-  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
+  flex-direction: row;
   align-items: center;
   padding: 16px 32px;
   min-width: 170px;
