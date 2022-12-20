@@ -8,12 +8,8 @@
   width: 100%;
   height: 100%;
   @media screen and (max-width: $pre-tablet) {
-    padding: 96px 18px 121px;
+    padding: 96px 18px 121px 18px;
   }
-  // padding-top: 396px;
-  // padding-left: 238px;
-  // padding-right: 18px;
-  // padding-bottom: 121px;
 
   background-color: #2e2f4266;
   overflow-y: scroll;
@@ -33,13 +29,12 @@
 }
 
 .modal {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
   max-width: 392px;
-  max-height: 579px;
   width: 100%;
-  height: 100%;
+  padding: 72px 16px 24px 16px;
 
   @media screen and (min-width: $tablet) {
     max-width: 408px;
@@ -47,16 +42,6 @@
     top: 50%;
     left: 50%;
   }
-
-  // @media screen and(min-width: $tablet) {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-
-  //   max-width: 408px;
-  //   width: 100%;
-  //   height: 576px;
-  // }
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px #00000024, 0px 1px 3px #0000001f,
