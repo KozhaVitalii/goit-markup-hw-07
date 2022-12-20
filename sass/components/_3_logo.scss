@@ -1,6 +1,8 @@
 // Common rules for logo
 
 .logo-top {
+  // display: flex;
+  // justify-content: flex-start;
   color: $accent-bg-color-button-text-color;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -28,12 +30,13 @@
 }
 
 @media screen and (min-width: $tablet) {
-.logo-top {
-  display: flex;
-  align-items: center;
-}
-
-.logo-bottom {
+  .logo-top {
     display: flex;
-  align-items: center;}
+    align-items: center;
+  }
+
+  .logo-bottom {
+    display: flex;
+    align-items: center;
+  }
 }

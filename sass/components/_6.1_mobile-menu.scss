@@ -67,7 +67,7 @@
     display: block;
     padding: 0;
     margin-top: 40px;
-    margin-bottom: 284px;
+    margin-bottom: 20vh;
     list-style: none;
   }
 
@@ -103,6 +103,7 @@
 
   .mobile-media-contacts {
     margin-top: auto;
+    width: auto;
   }
 
   .mobile-contacts {
@@ -121,6 +122,9 @@
     color: $accent-bg-color-button-text-color;
     font-weight: 600;
     font-size: 36px;
+    @media screen and (min-width: 1px) and (max-width: 427px) {
+      font-size: 24px;
+    }
     line-height: 1.111;
     text-decoration: none;
 
@@ -142,10 +146,9 @@
   /* Стилизуем линки на соц.сети в мобильном меню*/
   .mobile-social-link {
     display: flex;
-    // width: 328px;
-    // height: 40px;
-    // justify-content: center;
-    // align-items: center;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -153,7 +156,7 @@
     padding: 0;
     list-style: none;
 
-    gap: 56px;
+    gap: 50px;
   }
 
   .mobile-social-link .mobile-social-block {
